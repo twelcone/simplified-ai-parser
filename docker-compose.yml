@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  parser:
+    build: .
+    container_name: simplified-ai-parser
+    ports:
+      - "7656:7656"
+    restart: unless-stopped
